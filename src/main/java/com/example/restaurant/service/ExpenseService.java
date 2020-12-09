@@ -13,6 +13,7 @@ public class ExpenseService {
     @Autowired
     ExpenseMapper expenseMapper;
 
+
     public int addExpense(String name, double amount, Timestamp time) {
         return expenseMapper.addExpense(name, amount, time);
     }
